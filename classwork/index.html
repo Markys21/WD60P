@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scratch Pad</title>
+</head>
+<body>
+    
+    <form>
+
+        <lapel for="email-input">Please use a Udemy.com</lapel>
+        <input id="email-input" type="email" placeholder="Ania@udemy.com" 
+        pattern="+@udemy\.com">
+
+        <input type="submit" value="Sign in">
+    </form>
+<hr>
+        <form>
+        <label for="volume-input">Volume</label>
+        <input id="volume-input" type="range" step="20" min="0" max="100" value="20">
+        <input type="submit">
+        </form>
+
+<hr>
+        <form>
+
+            <h1>How was your time at Happyland</h1>
+            <input id="bad-input" type="radio" name="experience" value="bad">
+            <label for="bad-input">Bad</label>
+
+            <input id="okay-input" type="radio" name="experience" value="okay">
+            <label for="okay-input">Okay</label>
+
+            <input id="good-input" type="radio" name="experience" value="good" checked>
+            <label for="good-input">Good</label>
+
+            <input type="submit">
+        </form>
+<hr>
+
+            <label for="snacks-list">which snack do you want to add:</label>
+
+        <select name="snacks" id="snacks-list">
+            <option value="">--Please choose an option--</option>
+            <option value="chocolate">chocolate</option>
+            <option value="lollipop">Lollipop</option>
+            <option value="ice-cream">Ice Cream</option>
+            <option value="crisps">Crisps</option>
+        </select>
+
+<hr>
+            <label for="size-list">Select your size</label>
+
+        <select id="size-list">
+            <option value="">Please select your option</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+        </select>
+
+<hr>
+         <div
+            data-question="What colour are carrots?" 
+            data-option-1="blue"
+            data-option-2="orange"
+            ></div>
+
+</body>
+</html>
