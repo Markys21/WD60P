@@ -1,0 +1,19 @@
+.div {
+    
+    margin-left: 200px;
+}
+img {
+   
+    height: 200px;
+    width: 200px;
+    border-radius: 150%;
+ 
+   
+    border: 5px solid rgb(0, 255, 170);  
+    background-color: lightgreen;  
+    object-fit:fill;  
+}  
+h1 {
+    text-align: center;
+    padding-bottom: 40px;
+}

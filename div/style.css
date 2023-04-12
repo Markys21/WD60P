@@ -1,0 +1,35 @@
+header {
+    text-align: center;
+    font-size: 50px;
+}
+
+.color1 {
+    background-color: lightgreen
+
+}
+
+td {
+    text-align: center;
+    background-color: rgb(0, 255, 115);
+}
+#outer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20%;
+    margin-left: -35%;
+}
+img {
+    height: 60px;
+    width: 60px;
+    border-radius: 150%;
+}
+
+.size {
+    height: 60px;
+  width: 80%;
+
+}
+body {
+    background-color: rgb(189, 233, 218);
+}
