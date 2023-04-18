@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reg.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Registration Form</title>
+</head>>
+
+<div class="main-div">
+	<div class="left-div">
+		<div class="icon">
+		<p>Sign up with:</p>
+		
+        <a href="http://facebook.com"  class="fa-brands fa-google"></a>
+        <a href="http://google.com" class="fa-brands fa-facebook"></a>
+        <a href="http://github.com" class="fa-brands fa-github"></a>
+	</div>
+	</div>
+
+		<div class="right-div">
+			<h2>Registration Form</h2>
+				<form class="form">
+					<div class="formbox">
+					<div class="form-left">
+					<label for="username">Full Name:</label>
+					<input placeholder="Please enter your Name" type="text" name="username" required>
+					
+					<label for="email">Email:</label>
+					<input placeholder="Please enter your Email" type="email" name="email" required>
+					
+					<label for="username">Country:</label>
+					<input placeholder="Please enter your Country" type="text" required>
+
+					<label for="password">Password:</label>
+					<input placeholder="Please enter your Password" type="password" id="password" name="password" required>
+					<br>
+				</div>
+					<div class="form-right">
+						<label  for="Botcamp">Choose a Training:</label>
+
+						<select  class="choose-cars" name="cars" id="cars">
+						  <option value="">---- Please Select your training ----</option>
+						  <option value="Web Dev">Web Dev</option>
+						  <option value="Mobile Dev">Mobile Dev</option>
+						  <option value="UX">UX</option>
+						  <option value="KodeGo">KodeGo</option>
+						</select>
+
+					<label for="phone">Enter your Phone Number:</label>
+					<input placeholder="Please enter your Phone Number" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+						<br>
+					<label for="username">City:</label>
+					<input placeholder="Please enter your City" type="text" id="username" name="username" required>
+
+					<label for="confirm_password">Confirm Password:</label>
+					<input placeholder="Please Retype your Password" type="password" id="confirm_password" name="confirm_password" required>
+				</div>
+				
+				
+				</div>
+				<div class="footer">
+					<label for="gender">Gender:</label>
+					<div class="genderbox">
+					
+					
+					<input class="gender" type="radio" id="male" name="gender" value="male" required></td>
+					<label for="male">Male</label>
+
+					<input class="gender" type="radio" id="female" name="gender" value="female" required></td>
+					<label for="female">Female</label>
+					
+						<td><input class="gender" type="radio" id="female" name="gender" value="female" required></td>
+						<label for="female">Other</label>
+					
+						<td><input class="gender" type="radio" id="female" name="gender" value="female" required></td>
+						<label for="female">Prefer not to say</label>
+					</div>
+							<button class="submit">Submit</button>
+							<p class="main-menu"><a href="/main-menu/main-menu.html">Back to Main menu?</a></p>
+						</div>
+					
+					
+					
+	</form>
+	</div>
+	
+</div>
+
+
+
+
+
+	
+
+</body>
+</html>

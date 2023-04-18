@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-content: center;
+    background: url("/pexels-bob-clark-21492\ \(1\).jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+/* main-div */
+.main-div {
+    width: 20vw;
+    height: 45vh;
+    background:linear-gradient(120deg, rgb(231, 109, 22), rgb(197, 228, 21)) no-repeat;
+    text-align: center;
+    border: 12px solid #e2bf61;
+    border-radius: 20px;   
+}
+h1 {
+    margin: 0 auto;
+    width: 80%;
+    background-color: khaki;
+    transform:translateY(-30px);
+    border: 5px solid #e2bf61;
+    text-shadow: 2px 2px 2px rgb(148, 142, 148);
+}
+/* main-div */
+/* content */
+.content {
+    
+    gap: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+.submit {
+    font-family: 'DynaPuff', cursive;
+    font-size: 25px;
+    color: rgb(48, 44, 33);
+    padding: 18px 90px;
+    border-radius: 20px;
+    border-color: coral; 
+    background-color: khaki;
+    text-shadow: 2px 2px 2px rgb(148, 142, 148);
+}
+.submit:hover {
+    background-color: rgb(195, 255, 247);
+}
+.reset {
+    padding: 18px 60px;
+}
+.sign-up {
+    padding: 18px 83px;
+}
+/* content */

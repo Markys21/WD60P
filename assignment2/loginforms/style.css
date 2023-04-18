@@ -1,0 +1,92 @@
+/* LOGIN Design*/
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    display: grid;
+    place-items: center;
+    background:linear-gradient(120deg, violet, blue) no-repeat;
+    min-height: 100vh;
+}
+/* start main div design */
+.main-div {
+    height: 800px;
+    width: 1200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 4px 2px 9px black;
+    overflow: hidden;
+}
+/* end main div design */
+/* left side design */
+.right-side {
+    text-align: center;
+    width: 700px;
+    display: grid;
+    place-content: center;
+    background: url("/pexels-marek-piwnicki-6562811.jpg") no-repeat center center;
+    background-size: cover;
+    color: rgb(35, 29, 43);
+    font-size: 30px;
+    text-shadow: 2px 3px 2px rgb(207, 181, 208);
+}
+.check {
+   display: flex;
+   justify-content: left;
+   gap: 7px;
+   margin-left: 22px;
+   margin-top: 10px;
+}
+/* left side design */
+
+span {
+    color: rgb(255, 0, 255);
+    
+}
+h2 {
+    text-shadow: 2px 3px 2px rgb(207, 181, 208);
+}
+.input-w {
+    height: 40px;
+    width: 300px;
+    padding: 1rem;
+    letter-spacing: 3px;
+}
+table th {
+    
+    padding: 10px;
+    letter-spacing: 1px;
+    
+}
+.button-submit {
+    height: 45px;
+    width: 200px;
+    background:linear-gradient(120deg, violet, blue) no-repeat;
+    color: aliceblue;
+    font-size: 20px;
+    border-color: rgb(196, 202, 255);
+    border-radius: 9px 9px;
+}
+.left-side {
+    text-align: center;
+    width: 500px;
+    display: grid;
+    place-content: center;
+    line-height: 2rem;
+    
+}
+/* icon */
+a {
+    text-decoration: none ;
+    margin-left: 10px;
+   gap: 10px;
+   text-shadow: 2px 2px 2px rgb(207, 181, 208);
+}
+*:focus{
+    outline:none;
+}

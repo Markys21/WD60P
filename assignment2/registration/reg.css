@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    
+    display: grid;
+    place-items: center;
+    background: url("/pexels-skylar-kang-6044783.jpg")no-repeat;
+    background-size: cover;
+    
+}
+/* main div design */
+.main-div {
+    text-shadow: 2px 2px 2px rgb(148, 142, 148);
+    font-weight: bolder;
+    color: rgb(44, 35, 35);
+    border-radius: 20px;
+    box-shadow: 4px 2px 9px black;
+    overflow: hidden;
+    margin: 60px ;
+    height: 800px;
+    width: 1200px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+/* main div design */
+/* right div design*/
+/* form */
+.right-div { 
+    padding: 60px;
+    width: 800px;
+    background:linear-gradient(120deg, rgb(231, 165, 22), rgb(149, 228, 21)) no-repeat;
+    background-size: cover;   
+}
+
+a {
+    
+    margin: 10px;
+   gap: 12px;
+   text-decoration: none ;
+   text-shadow: 2px 2px 2px rgb(148, 142, 148);
+}
+.icon {
+    padding: 130px;
+    text-align: center;
+    align-self: center;   
+}
+.left-div {
+    text-shadow: 2px 3px 2px rgb(198, 194, 198);
+    font-size: 30px;
+    display: flex;
+    width: 100%;
+    background: url("/pexels-pixabay-268941.jpg")no-repeat;
+}
+.form {
+    margin: 20px;
+  
+    font-size: 20px;
+
+}
+
+input {
+    border: solid rgb(222, 217, 217);
+    border-radius: 5px 5px;
+    height: 40px;
+    width: 270px;
+    padding-left: 20px;
+    margin: 20px 0px;
+}
+h2 {
+    font-size: 35px;
+    text-align: center;   
+}
+.choose-cars {
+    border: solid rgb(222, 217, 217);
+    border-radius: 5px 5px;
+    height: 40px;
+    width: 270px;
+    padding-left: 20px;
+    margin: 20px 0px;
+}
+.gender {
+    
+    width: 15px;
+    border: 2px solid black;
+}
+.formbox {
+    text-shadow: 2px 2px 2px rgb(148, 142, 148);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.submit {
+    color: whitesmoke;
+    font-size: 19px;
+    padding: 16px;
+    width: 100%;
+    background-color: rgb(23, 81, 243);
+    border-radius: 20px;
+}
+.main-menu {
+    padding-top: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(148, 142, 148);
+}
+.genderbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .form-right {
+    width: 100px;
+    
+} */
+/* bottom-div */
+
+/* right div design */
+/* left div design */
+
+/* left div design */
