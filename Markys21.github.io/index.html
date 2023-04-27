@@ -7,56 +7,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/mdb.min.css">
     <title>Document</title>
 </head>
 <body>
-    <!-- Header -->
-    <header id="#Home" class="fixed-top container-fluid navbar">  
+     <!-- Header -->
+     <header id="#Home" class="fixed-top d-flex justify-content-between navbars container-fluid ">  
         
-        <div>
-            <a class="nav-hover navbar-brand" href="index.html"><img class="home-logo" src="/logo-final.png" alt=""></a>
-        </div>
-        
-        <nav class="navbar navbar-expand-lg navbar-expand-lg bg-primary">
-            <div class="container-fluid">
-              <a class="nav-hover navbar-brand" href="#">HOME</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="nav-hover navbar-brand" href="#">ABOUT US</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="nav-hover navbar-brand" href="#">EVENT</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-hover nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ACCESSORIES
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Drums</a></li>
-                      <li><a class="dropdown-item" href="#">Equipment</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Reservation</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="nav-hover form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="nav-hover btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+      <div class="navbars">
+          <a class="nav-hover navbar-brand" href="/index.html"><img class="home-logo" src="/logo-final.png" alt=""></a>
+      </div>
+      
+      <nav class="navbars navbar-expand-lg navbar-expand-lg bg-primary">
+          <div class="container-fluid d-flex fs-5 text-black gap-3 mt-5">
+            <a class="nav-hover navbar-brand" href="/index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="nav-hover navbar-brand" href="about.html">ABOUT US</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="nav-hover navbar-brand" href="/event.html">EVENT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-hover nav-link dropdown-toggle" href="/accessories.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ACCESSORIES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/accessories.html">Drums</a></li>
+                    <li><a class="dropdown-item" href="#">Equipment</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/about.html">Reservation</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="nav-hover form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="nav-hover btn btn-outline-danger text-dark" type="submit">Search</button>
+              </form>
             </div>
-          </nav>
-        
-    </header>
+          </div>
+        </nav>
+      
+  </header>
     <section class="mt-5 landing-page">
     <h2>WELCOME TO</h2>
     <h1>DRUMSHOP</h1>
-    <img class="logo-img" src="/final-logo.png">
+    <img class="logos-img" src="/final-logo.png">
     <div>
     <h2>Partners:</h2>
     <img class="logo-partners" src="/partnerlogo1.png">
@@ -71,23 +72,14 @@
             <br>
             Being a drummer requires a unique combination of skills, including rhythm, coordination, and creativity. You must be able to keep time, to play in sync with the other musicians, and to improvise when necessary. You must be physically fit, with strong arms and legs, and able to withstand the demands of long rehearsals and live performances.
         </p>
-        <button type="button" class="mt-5 btn btn-outline-secondary">Read More</button>
+        <button type="button" class="mt-5 btn btn-outline-secondary"><a class="text-decoration-none text-dark" href="/about.html"> Read More </a></button>
     </div>
     <div class="right-div">
         <img class="img-drums" src="/img/pic1.jpg">
     </div>
 
     </section>
-    <div class="div-images">
-        <img class="list-images" src="markys-logo (1).png">
-        <img class="list-images" src="markys-logo (1).png">
-        <img class="list-images" src="markys-logo (1).png">
-        <img class="list-images" src="markys-logo (1).png">
-        <img class="list-images" src="markys-logo (1).png">
-        <img class="list-images" src="markys-logo (1).png">
-     
-        
-    </div>
+   
     <section class="div-featured">
         <h2>CHOOSE YOUR BEAT</h2>
         
@@ -102,7 +94,7 @@
         <div>
             <img class="sub-left" src="/pic2.jpg">
             <h2>Metal Set up</h2>
-            <p>530<span>/price </span>$</p>
+            <p>4,599.99<span>/price </span>$</p>
             <ul>
                 Double peds
                 <br>
@@ -123,7 +115,7 @@
                         <div class="d-flex justify-content-center">
                             <div class="col-md-6 modal-body">
                                 <img class="ps-5" src="/pic2.jpg">
-                                <p class="mt-4 fs-2 text-center">530<span>/price </span>$</p>
+                                <p class="mt-4 fs-2 text-center">4,599.99<span>/price </span>$</p>
                              </div>
                                 <div class="mt-2 fs-5 text-start col-md-6">
                                 <p class="fs-2">Tama</p>
@@ -135,65 +127,122 @@
                         </div>
                     </div>
                          <div class="modal-footer">
-                      <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">ADD TO CART</button>
+                      <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <a class="text-decoration-none text-black" href="/accessories.html">ADD TO CART</a> </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      Hide this modal and show the first with the button below.
-                    </div>
-                    <div class="modal-footer">
-                      <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    
               <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">BUY NOW</button>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
-                <label class="form-check-label" for="flexCheckIndeterminateDisabled">
-                  Disabled indeterminate checkbox
-                </label>
-              </div>
+              
         </div>
         <div>
             
             <img class="sub-center" src="/pic5.jpg">
-            <h2>Disco Set up</h2>
-            <p>390<span>/price </span>$</p>
+            <h2>Electric Set up</h2>
+            <p>4,035.00<span>/price </span>$</p>
             <ul>
                 Snare
                 <br>
                 Cymbals
             </ul>
-            <button type="button" class="mt-5 btn btn-outline-secondary">Read More</button>
-
-        </div>
+            <div class=" modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class=" modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-h1 modal-content">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="container-fluid modal-header">
+                    <div class="col-md-12">
+                      <h1 class="text-center modal-title fs-2" id="exampleModalToggleLabel">Electric Set up</h1>
+                    <p class="text-center fs-5">DW Drums Collector’s Maple Mahogany Pale Blue Oyster 4pc Drum Set</p>
+                      </div>
+              </div>
+      
+                  <div class="container-fluid">
+                      <div class="d-flex justify-content-center">
+                          <div class="col-md-6 modal-body">
+                              <img class="ps-5" src="/pic5.jpg">
+                              <p class="mt-4 fs-2 text-center">4,035.00<span>/price </span>$</p>
+                           </div>
+                              <div class="mt-2 fs-5 text-start col-md-6">
+                              <p class="fs-2">DW</p>
+                              <p class="fs-5">Maple Mahogany</p>
+                              <p class="fs-5">Pale Blue Oyster</p>
+                              <p class="fs-5">Drum Sizes (depth x diameter): 8×10, 9×12, 14×16 floor tom, 16×22 bass drum.</p>
+                              <p class="fs-5">SO 1305823</p>
+                              </div>
+                      </div>
+                  </div>
+                       <div class="modal-footer">
+                    <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"> <a class="text-decoration-none text-black" href="/accessories.html">ADD TO CART</a> </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                  
+            <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">BUY NOW</button>
+            
+      </div>
         <div class="">
             
             
             <img class="sub-right" src="/pic3.jpg">
-            <h2>Electric Set up</h2>
-            <p>930<span>/price </span>$</p>
+            <h2>Disco Set up</h2>
+            <p>3,700.00<span>/price </span>$</p>
             <ul>
                 Techno Equipment
                 <br>
                 Mixer
             </ul>
-            <button type="button" class="mt-5 btn btn-outline-secondary">Read More</button>
-        </div>
+            <div class=" modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class=" modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-h1 modal-content">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="container-fluid modal-header">
+                    <div class="col-md-12">
+                      <h1 class="text-center modal-title fs-2" id="exampleModalToggleLabel">Disco Set up</h1>
+                    <p class="text-center fs-5">TAMA Superstar Classic Maple Midnight Gold Sparkle 3pc Kit CK32RZS MGD</p>
+                      </div>
+              </div>
+      
+                  <div class="container-fluid">
+                      <div class="d-flex justify-content-center">
+                          <div class="col-md-6 modal-body">
+                              <img class="ps-5" src="/pic3.jpg">
+                              <p class="mt-4 fs-2 text-center">$3,700.00<span>/price </span>$</p>
+                           </div>
+                              <div class="mt-2 fs-5 text-start col-md-6">
+                              <p class="fs-2">Tama</p>
+                              <p class="fs-5">Star Bubinga</p>
+                              <p class="fs-5">3pc Set</p>
+                              <p class="fs-5">Dark Green Cordia</p>
+                              <p class="fs-5">B Stock</p>
+                              </div>
+                      </div>
+                  </div>
+                       <div class="modal-footer">
+                    <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"> <a class="text-decoration-none text-black" href="/accessories.html">ADD TO CART</a> </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                  
+            <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">BUY NOW</button>
+            
+      </div>
     </div>
        
     
     </section>
+    <div class="div-images">
+      <img class="list-images" src="markys-logo (1).png">
+      <img class="list-images" src="markys-logo (1).png">
+      <img class="list-images" src="markys-logo (1).png">
+      <img class="list-images" src="markys-logo (1).png">
+      <img class="list-images" src="markys-logo (1).png">
+      <img class="list-images" src="markys-logo (1).png">
+   
+      
+  </div>
     <div class="div-property">
         <h2>JUST A FEW REASONS TO CHOOSE</h2>
         <h1>The Markys Drum shop Property</h1>
@@ -219,19 +268,19 @@
                     </div>
     </div>
     <section class="advantage">
-        <h1>Advantage</h1>
-        <p>In conclusion, playing the drums can provide a range of advantages, from improving coordination and brain function, to providing stress relief, cardiovascular exercise, and social interaction.
+        <h1 class="fs-1 text-light">Advantage</h1>
+        <p class="p-text text-light">In conclusion, playing the drums can provide a range of advantages, from improving coordination and brain function, to providing stress relief, cardiovascular exercise, and social interaction.
              As such, playing drums can be an excellent activity for individuals of all ages and skill levels, and may be worth considering as a part of one's regular routine.</p>
             
             <div class="advantage-content">
         <div>
-            <img src="/img/pic6.jpg">
+            <img class="advantage-img" src="/img/pic6.jpg">
         </div>
         
         <div>
-            <h2>Drumming can offer several benefits, <br>
+            <h2 class="text-light">Drumming can offer several benefits, <br>
                 including:</h2>
-            <ol>
+            <ol class="text-light">
                 <li>Stress relief: Playing the drums can be a great way to relieve stress and tension. <br>
                     The physical act of hitting the drums can help you release built-up emotions and feel more relaxed.</li>
 
@@ -253,7 +302,40 @@
                 <li>Fun and enjoyment: Above all, drumming can be a fun and enjoyable activity that <br>
                      allows you to express yourself creatively and have a good time.</li>
             </ol>
-            <button type="button" class="mt-5 btn btn-outline-light">Read More</button>
+            <div class=" modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-h1 modal-bg  modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="container-fluid modal-header">
+                          <div class="col-md-12">
+                            <h1 class="text-center modal-title fs-2" id="exampleModalToggleLabel">Beginner</h1>
+                          <p class="text-center fs-5">RESERVE YOUR SPOT!!!</p>
+                            </div>
+                    </div>
+            
+                        <div class="container-fluid">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-md-6 modal-body">
+                                    <img class="ps-5" src="/img/pics6.jpg">
+                                    <p class="mt-4 fs-2 text-center">530<span>/price </span>$</p>
+                                 </div>
+                                    <div class="mt-2 fs-5 text-start col-md-6">
+                                    <p class="fs-2">History Music</p>
+                                    <p class="fs-5">Basic Counting</p>
+                                    <p class="fs-5">Metronome</p>
+                                    <p class="fs-5">Basic Beat</p>
+                                    <p class="fs-5">Basic Rolling</p>
+                                    </div>
+                            </div>
+                        </div>
+                             <div class="modal-footer">
+                          <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"> <a class="text-decoration-none text-black" href="/event.html">RESERVE</a> </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                        
+                  <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal">Enroll NOW!</button>
         </div>
     </div>
     </section>
@@ -273,7 +355,7 @@
             <p>The sound of the drums you are playing is more important then the look but let’s face it, it is nice to sit behind a great looking kit. The color of the kit I am playing on is the Titanium Sparkle. The chrome hardware really looks great with that sparkle shell finish. You can also get a Pewter Sparkle version that is even darker and looks amazing too.</p>
             <span>~ katryn Bernardo</span>
             <br>
-            <button type="button" class="mt-5 btn btn-outline-warning">Read More</button>
+            <button type="button" class="mt-5 btn btn-outline-warning"><a class="text-decoration-none text-dark" href="/about.html"> Read More</a></button>
         </div>
         <div>
             <img class="bbm" src="/bbm.jpg">
@@ -293,7 +375,31 @@
         <img class="list-images" src="/markys-logo (1).png">
         <img class="list-images" src="/markys-logo (1).png">
     </div>
+    <section class="loc container-fluid">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="col-md-6 text-center">
+      <h4 class="mt-5">LOCATION & MAP</h4>
+      <h1 class="mt-3">Driving Directions</h1>
+      <p class="mt-3">Follow the Commonwealth Road.</p> 
+  <div class="gap-3 d-flex justify-content-center">
+    <div>
+    <h1 class="mt-3">4.3 KM</h1>
+    <h5 class="mt-3">Away from the Circle</h5>
+    
+  </div>
+  <div>
+    <h1 class="mt-3">2.6 KM</h1>
+    <h5 class="mt-3">Away from the Litex</h5>
+  </div>
+  </div>
+  
+    </div>
 
+      <div class="m-5 col-md-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7718.58611597052!2d121.06467959357914!3d14.696012200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0a15a8c454d%3A0x55a9bef78689e3e2!2sTower%20Of%20Dove%20Music%20Studio!5e0!3m2!1sen!2sph!4v1682536912000!5m2!1sen!2sph" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+  </section>
     <footer>
         <div class="div-footer">
         <div>
@@ -314,248 +420,7 @@
     <div class="footer-copy">
         <p>© Markys 2023. All Right Reserved. <span>Privacy Policy</span></p>
     </div>
-
-    <div class=" modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class=" modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-h1 modal-content">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="container-fluid modal-header">
-              <div class="col-md-12">
-                <h1 class="text-center modal-title fs-2" id="exampleModalToggleLabel">Metal Set up</h1>
-              <p class="text-center">TAMA Superstar Classic Maple Midnight Gold Sparkle 3pc Kit CK32RZS MGD</p>
-                </div>
-        </div>
-
-            <div class="container-fluid">
-                <div class="d-flex justify-content-center">
-                    <div class="col-md-6 modal-body">
-                        <img class="ps-5" src="/pic2.jpg">
-                        <p class="mt-4 fs-2 text-center">530<span>/price </span>$</p>
-                     </div>
-                        <div class="mt-2 fs-5 text-start col-md-6">
-                        <p class="fs-2">Tama</p>
-                        <p>Superstar Classic Maple</p>
-                        <p>3pc Set</p>
-                        <p>Midnight Gold Sparkle</p>
-                        <p>CK32RZSMGD</p>
-                        </div>
-                </div>
-            </div>
-                 <div class="modal-footer">
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Hide this modal and show the first with the button below.
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
-      <section class="h-100 gradient-custom">
-        <div class="container py-5">
-          <div class="row d-flex justify-content-center my-4">
-            <div class="col-md-8">
-              <div class="card mb-4">
-                <div class="card-header py-3">
-                  <h5 class="mb-0">Cart - 2 items</h5>
-                </div>
-                <div class="card-body">
-                  <!-- Single item -->
-                  <div class="row">
-                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                      <!-- Image -->
-                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
-                          class="w-100" alt="Blue Jeans Jacket" />
-                        <a href="#!">
-                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                        </a>
-                      </div>
-                      <!-- Image -->
-                    </div>
-      
-                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                      <!-- Data -->
-                      <p><strong>Blue denim shirt</strong></p>
-                      <p>Color: blue</p>
-                      <p>Size: M</p>
-                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
-                        title="Remove item">
-                        <i class="fas fa-trash"></i>
-                      </button>
-                      <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
-                        title="Move to the wish list">
-                        <i class="fas fa-heart"></i>
-                      </button>
-                      <!-- Data -->
-                    </div>
-      
-                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                      <!-- Quantity -->
-                      <div class="d-flex mb-4" style="max-width: 300px">
-                        <button class="btn btn-primary px-3 me-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                          <i class="fas fa-minus"></i>
-                        </button>
-      
-                        <div class="form-outline">
-                          <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control" />
-                          <label class="form-label" for="form1">Quantity</label>
-                        </div>
-      
-                        <button class="btn btn-primary px-3 ms-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                          <i class="fas fa-plus"></i>
-                        </button>
-                      </div>
-                      <!-- Quantity -->
-      
-                      <!-- Price -->
-                      <p class="text-start text-md-center">
-                        <strong>$17.99</strong>
-                      </p>
-                      <!-- Price -->
-                    </div>
-                  </div>
-                  <!-- Single item -->
-      
-                  <hr class="my-4" />
-      
-                  <!-- Single item -->
-                  <div class="row">
-                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                      <!-- Image -->
-                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
-                          class="w-100" />
-                        <a href="#!">
-                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                        </a>
-                      </div>
-                      <!-- Image -->
-                    </div>
-      
-                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                      <!-- Data -->
-                      <p><strong>Red hoodie</strong></p>
-                      <p>Color: red</p>
-                      <p>Size: M</p>
-      
-                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
-                        title="Remove item">
-                        <i class="fas fa-trash"></i>
-                      </button>
-                      <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
-                        title="Move to the wish list">
-                        <i class="fas fa-heart"></i>
-                      </button>
-                      <!-- Data -->
-                    </div>
-      
-                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                      <!-- Quantity -->
-                      <div class="d-flex mb-4" style="max-width: 300px">
-                        <button class="btn btn-primary px-3 me-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                          <i class="fas fa-minus"></i>
-                        </button>
-      
-                        <div class="form-outline">
-                          <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control" />
-                          <label class="form-label" for="form1">Quantity</label>
-                        </div>
-      
-                        <button class="btn btn-primary px-3 ms-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                          <i class="fas fa-plus"></i>
-                        </button>
-                      </div>
-                      <!-- Quantity -->
-      
-                      <!-- Price -->
-                      <p class="text-start text-md-center">
-                        <strong>$17.99</strong>
-                      </p>
-                      <!-- Price -->
-                    </div>
-                  </div>
-                  <!-- Single item -->
-                </div>
-              </div>
-              <div class="card mb-4">
-                <div class="card-body">
-                  <p><strong>Expected shipping delivery</strong></p>
-                  <p class="mb-0">12.10.2020 - 14.10.2020</p>
-                </div>
-              </div>
-              <div class="card mb-4 mb-lg-0">
-                <div class="card-body">
-                  <p><strong>We accept</strong></p>
-                  <img class="me-2" width="45px"
-                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
-                    alt="Visa" />
-                  <img class="me-2" width="45px"
-                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
-                    alt="American Express" />
-                  <img class="me-2" width="45px"
-                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
-                    alt="Mastercard" />
-                  <img class="me-2" width="45px"
-                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.webp"
-                    alt="PayPal acceptance mark" />
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4">
-                <div class="card-header py-3">
-                  <h5 class="mb-0">Summary</h5>
-                </div>
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li
-                      class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                      Products
-                      <span>$53.98</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                      Shipping
-                      <span>Gratis</span>
-                    </li>
-                    <li
-                      class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
-                      <div>
-                        <strong>Total amount</strong>
-                        <strong>
-                          <p class="mb-0">(including VAT)</p>
-                        </strong>
-                      </div>
-                      <span><strong>$53.98</strong></span>
-                    </li>
-                  </ul>
-      
-                  <button type="button" class="btn btn-primary btn-lg btn-block">
-                    Go to checkout
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <script src="/js/mdb.min.js"></script>  
 <script src="/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

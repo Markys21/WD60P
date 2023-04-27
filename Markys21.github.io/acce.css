@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(rgb(236, 232, 232), rgb(242, 222, 242));
+}
+/* header */
+.navbars {
+   
+    background: linear-gradient(rgb(220, 206, 206), rgb(233, 200, 233));
+}
+.home-logo {
+    filter: grayscale(90%) invert(100%);
+    margin-bottom: -40px;
+    padding: 0px 0px 20px 100px;
+}
+.nav-hover:hover {
+    transform:translateY(10px);
+    text-decoration-line: underline;
+}
+.nav-hover {
+    transition: all .5s;
+}
+
+/* header */
+.addto {
+    margin-top: 100px;
+}
+.loc {
+    background: linear-gradient(rgb(242, 225, 216), rgb(245, 226, 226));
+}
+/* footer */
+footer {
+    height: 30vh;
+    background-color:#161616;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+footer h1 {
+    font-size: 25px;
+    color: rgb(226, 234, 181);
+}
+footer span {
+    color: rgb(241, 85, 85);
+}
+.footer-copy {
+    background-color: black;
+   text-align: center;
+   color: aliceblue;
+}
+div span {
+    color: rgb(241, 85, 85);
+}
+/* footer */

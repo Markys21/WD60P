@@ -22,10 +22,8 @@
 }
 
 /* header */
-
-/* landing-page */
 .landing-page {
-    background: url("/img/aliane-schwartzhaupt-QdmUva6qBTk-unsplash.jpg") no-repeat;
+    background: url("/pexels-josh-sorenson-154138.jpg") no-repeat;
     background-size:100% 100%;
     height: 100vh;
     display: flex;
@@ -53,14 +51,13 @@
     height: 70px;
 }
 /* landing-page */
-
 /* about us */
 .about-us {
-    height: 120vh;
+    height: 100vh;
     background: linear-gradient(rgb(233, 200, 233), rgb(237, 230, 230));
     display: flex;
     justify-content: space-between;
-
+    
 }
 .left-div {
     display: flex;
@@ -91,12 +88,8 @@
 .left-div button {
     margin: 20px;
     padding: 15px;
-    color: #894a4a;
-    font-size: 18px;
+    background-color: #ffffff;
 }
-
-
-
 .right-div {
     display: flex;
     justify-content: center;
@@ -185,94 +178,12 @@
     filter: saturate(3);  
 }
 /* featured drums */
-/* property */
-.loc {
-    background: linear-gradient(rgb(242, 225, 216), rgb(245, 226, 226));
-    border-top:  2px solid rgb(255, 185, 180);
-}
-.div-property {
-    border-top:  2px solid rgb(255, 185, 180);
-    height: 60vh;
-    background: linear-gradient(rgb(242, 225, 216), rgb(245, 226, 226));
-    text-align: center; 
-    padding: 70px 0px 0px 0px;
-}
-.div-property h2 {
-    padding: 20px;
-    font-size: 15px;
-}
-.div-property h1 {
-    padding-bottom: 50px;
-}
-.icon-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 200px;
-    font-size: 30px;
-    color: gray;
-}
-.icon-container p {
-   padding: 20px;
-}
-/* property */
-/* advatage */
-.advantage {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 120vh;
-    padding: 40px 0px 0px 0px;
-    background: linear-gradient(rgb(236, 47, 91), rgba(254, 199, 159, 0.882));
-}
-.modal-bg {
-    background: linear-gradient(rgb(236, 47, 91), rgba(254, 199, 159, 0.882));
-}
-.p-text {
-    padding: 20px 0px 40px 0px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    width: 40%;
-}
-.advantage-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    
-}
-.advantage-img {
-    border: 10px solid whitesmoke;
-    border-radius: 20px 20px;
-    
-    height: 50vh;
-}
-.advantage-content h2 {
-    font-size: 30px;
-    text-align: left;
-   
-}
-.advantage-content ol {
-    padding-top: 10px;
-    line-height: 30px;
-    text-align: left;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-.advantage-content button {
-    margin: 20px;
-    padding: 15px;
-}
-/* advatage */
-/* testimonials */
 .testimonials {
     text-align: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
     background: linear-gradient(rgb(234, 222, 188), rgba(251, 247, 211, 0.882));
-   
 }
 .testimonials h2 {
     font-size: 15px;
@@ -324,6 +235,102 @@
     color: #de9337;
 }
 /* testimonials */
+/* featured drums */
+.div-featured {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 40px 0px 0px 0px;
+    background: linear-gradient(rgb(245, 226, 226), rgb(242, 225, 216));
+    
+}
+.div-featured h2 p {
+    font-size: 15px;
+}
+.div-featured h1 {
+    font-size: 46px;
+}
+.div-featured p {
+    font-size: 18px;
+}
+.main-featured {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.main-featured > div {
+    text-align: center;
+    justify-content: space-between;
+}
+.main-featured h2 {
+    font-size: 30px;
+}
+.main-featured p {
+    font-size: 60px;
+}
+.main-featured span {
+    font-size: 20px;
+    color: red;
+}
+.main-featured ul {
+    font-size: 18px;
+    
+}
+.main-featured button {
+    margin: 20px;
+    padding: 15px;
+    color: #894a4a;
+}
+.sub-left {
+    margin: 30px 0px 30px 0px;
+    border: 10px solid white;
+    filter: saturate(3);  
+}
+.sub-center {
+    margin: 30px 0px 30px 0px;
+    border: 10px solid white;
+    filter: saturate(3);  
+}
+.sub-right {
+    margin: 30px 0px 30px 0px;
+    border: 10px solid white;
+    filter: saturate(3);  
+}
+/* featured drums */
+/* property */
+.div-property {
+    border-top:  2px solid rgb(255, 185, 180);
+    height: 60vh;
+    background: linear-gradient(rgb(242, 225, 216), rgb(245, 226, 226));
+    text-align: center; 
+    padding: 70px 0px 0px 0px;
+}
+.div-property h2 {
+    padding: 20px;
+    font-size: 15px;
+}
+.div-property h1 {
+    padding-bottom: 50px;
+}
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+    font-size: 30px;
+    color: gray;
+}
+.icon-container p {
+   padding: 20px;
+}
+/* property */
+.loc {
+    background: linear-gradient(rgb(242, 225, 216), rgb(245, 226, 226));
+}
 /* footer */
 footer {
     height: 30vh;
@@ -332,7 +339,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .div-footer {
     display: flex;
@@ -341,7 +347,6 @@ footer {
     line-height: 35px;
     letter-spacing: 2px;
     font-size: 12px;
-    
 }
 footer h1 {
     font-size: 25px;
@@ -362,4 +367,7 @@ div span {
 .modal-h1 {
    
     background: linear-gradient(rgb(245, 226, 226), rgb(242, 225, 216));
+}
+.m-content {
+    padding: 20px;
 }
