@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="hello.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container-fluid text-white bg-gif">
+        <h1 class="text-center text-white fw-bold display-1">Grade Calculator</h1>
+
+
+        <div class="container-fluid mt-4 ">
+      <div class="row justify-content-evenly">
+        
+        <div class="col-lg-3 col-md-6 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded-3 bg-transparent border border-light">
+      <form class="m-4">
+        <div class="row">
+        <div class="col-6">
+        <h2 class="">MATH</h2>
+        <h6 class="fst-italic text-secondary">Subject</h6>
+        </div>
+        <div class="col-6">
+        <h1 class="display-3 text-center text-success" id="output"></h1>
+
+        <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
+
+        <h1 class="display-3 text-center text-warning" id="output2"></h1>
+
+        <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
+        
+        <h1 class="display-3 text-center text-danger" id="output4"></h1>
+        
+        </div>
+        </div>
+        
+        
+        <hr>
+        <div class="row">
+            <div class="col-6">
+        <label for="score">Grades:</label><br>
+        <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+         </div>
+         <div class="col-6">
+        <h1 class="fs-5 text-center text-success" id="output5"></h1>
+
+        <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
+
+        <h1 class="fs-5 text-center text-warning" id="output7"></h1>
+
+        <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
+        
+        <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+    </div>
+    </div>
+      </form>
+      
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded-3 bg-transparent border border-light">
+        <form class="m-4">
+          <div class="row">
+          <div class="col-6">
+          <h2 class="">ENGLISH</h2>
+          <h6 class="fst-italic text-secondary">Subject</h6>
+          </div>
+          <div class="col-6">
+          <h1 class="display-3 text-center text-success" id="output"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
+  
+          <h1 class="display-3 text-center text-warning" id="output2"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
+          
+          <h1 class="display-3 text-center text-danger" id="output4"></h1>
+          
+          </div>
+          </div>
+          
+          
+          <hr>
+          <div class="row">
+              <div class="col-6">
+          <label for="score">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+           </div>
+           <div class="col-6">
+          <h1 class="fs-5 text-center text-success" id="output5"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
+  
+          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
+          
+          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+      </div>
+      </div>
+        </form>
+        
+      </div>
+
+
+      <div class="col-lg-3 col-md-12 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded-3 bg-transparent border border-light">
+        <form class="m-4">
+          <div class="row">
+          <div class="col-6">
+          <h2 class="">SCIENCE</h2>
+          <h6 class="fst-italic text-secondary">Subject</h6>
+          </div>
+          <div class="col-6">
+          <h1 class="display-3 text-center text-success" id="output"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
+  
+          <h1 class="display-3 text-center text-warning" id="output2"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
+          
+          <h1 class="display-3 text-center text-danger" id="output4"></h1>
+          
+          </div>
+          </div>
+          
+          
+          <hr>
+          <div class="row">
+              <div class="col-6">
+          <label for="score">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+           </div>
+           <div class="col-6">
+          <h1 class="fs-5 text-center text-success" id="output5"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
+  
+          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
+          
+          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+      </div>
+      </div>
+        </form>
+        
+      </div>
+
+    
+    </div>
+
+    <div class="row justify-content-evenly">
+        <div class="col-lg-3 col-md-6 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded-3 bg-transparent border border-light">
+      <form class="m-4">
+        <div class="row">
+        <div class="col-6">
+        <h2 class="">HISTORY</h2>
+        <h6 class="fst-italic text-secondary">Subject</h6>
+        </div>
+        <div class="col-6">
+        <h1 class="display-3 text-center text-success" id="output"></h1>
+
+        <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
+
+        <h1 class="display-3 text-center text-warning" id="output2"></h1>
+
+        <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
+        
+        <h1 class="display-3 text-center text-danger" id="output4"></h1>
+        
+        </div>
+        </div>
+        
+        
+        <hr>
+        <div class="row">
+            <div class="col-6">
+        <label for="score">Grades:</label><br>
+        <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+         </div>
+         <div class="col-6">
+        <h1 class="fs-5 text-center text-success" id="output5"></h1>
+
+        <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
+
+        <h1 class="fs-5 text-center text-warning" id="output7"></h1>
+
+        <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
+        
+        <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+    </div>
+    </div>
+      </form>
+      
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded-3 bg-transparent border border-light">
+        <form class="m-4">
+          <div class="row">
+          <div class="col-6">
+          <h2 class="">FILIPINO</h2>
+          <h6 class="fst-italic text-secondary">Subject</h6>
+          </div>
+          <div class="col-6">
+          <h1 class="display-3 text-center text-success" id="output"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
+  
+          <h1 class="display-3 text-center text-warning" id="output2"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
+          
+          <h1 class="display-3 text-center text-danger" id="output4"></h1>
+          
+          </div>
+          </div>
+          
+          
+          <hr>
+          <div class="row">
+              <div class="col-6">
+          <label for="score">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+           </div>
+           <div class="col-6">
+          <h1 class="fs-5 text-center text-success" id="output5"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
+  
+          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
+          
+          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+      </div>
+      </div>
+        </form>
+        
+      </div>
+
+
+      <div class="col-lg-3 col-md-12 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded-3 bg-transparent border border-light">
+        <form class="m-4">
+          <div class="row">
+          <div class="col-6">
+          <h2 class="">VALUES</h2>
+          <h6 class="fst-italic text-secondary">Subject</h6>
+          </div>
+          <div class="col-6">
+          <h1 class="display-3 text-center text-success" id="output"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
+  
+          <h1 class="display-3 text-center text-warning" id="output2"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
+          
+          <h1 class="display-3 text-center text-danger" id="output4"></h1>
+          
+          </div>
+          </div>
+          
+          
+          <hr>
+          <div class="row">
+              <div class="col-6">
+          <label for="score">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+           </div>
+           <div class="col-6">
+          <h1 class="fs-5 text-center text-success" id="output5"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
+  
+          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
+          
+          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+      </div>
+      </div>
+        </form>
+        
+      </div>
+    </div>
+
+    <div class="row justify-content-evenly">
+      <div class="col-lg-3 col-md-6 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded-3 bg-transparent border border-light">
+        <form class="m-4">
+          <div class="row">
+          <div class="col-6">
+          <h2 class="">COMPUTER</h2>
+          <h6 class="fst-italic text-secondary">Subject</h6>
+          </div>
+          <div class="col-6">
+          <h1 class="display-3 text-center text-success" id="output"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
+  
+          <h1 class="display-3 text-center text-warning" id="output2"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
+          
+          <h1 class="display-3 text-center text-danger" id="output4"></h1>
+          
+          </div>
+          </div>
+          
+          
+          <hr>
+          <div class="row">
+              <div class="col-6">
+          <label for="score">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+           </div>
+           <div class="col-6">
+          <h1 class="fs-5 text-center text-success" id="output5"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
+  
+          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
+          
+          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+      </div>
+      </div>
+        </form>
+        
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 shadow-lg p-3 mb-5 bg-body rounded-3 bg-transparent border border-light">
+        <form class="m-4">
+          <div class="row">
+          <div class="col-6">
+          <h2 class="">MAPEH</h2>
+          <h6 class="fst-italic text-secondary">Subject</h6>
+          </div>
+          <div class="col-6">
+          <h1 class="display-3 text-center text-success" id="output"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
+  
+          <h1 class="display-3 text-center text-warning" id="output2"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
+          
+          <h1 class="display-3 text-center text-danger" id="output4"></h1>
+          
+          </div>
+          </div>
+          
+          
+          <hr>
+          <div class="row">
+              <div class="col-6">
+          <label for="score">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+           </div>
+           <div class="col-6">
+          <h1 class="fs-5 text-center text-success" id="output5"></h1>
+  
+          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
+  
+          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
+  
+          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
+          
+          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+      </div>
+      </div>
+        </form>
+        
+      </div>
+    </div>
+    
+
+    
+    </div>
+
+
+
+
+
+<div class="container">
+<div class="row">
+    <button id="calculateGrade" class="btn btn-outline-light p-4 fs-2 fw-bold" type="button" onclick="calculateGrade()">CALCULATE GRADE</button>
+</div>
+</div>
+    </section>
+
+
+
+    <script src="exe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
