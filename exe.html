@@ -7,12 +7,84 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="hello.css">
     <title>Document</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        cursor: none;
+      }
+      
+      .nav-wrapper {
+        width: 100%;
+        height: 100vh;
+        background: #161616;
+      }
+      
+      nav {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+      }
+      
+      .hover-this {
+        transition: all 0.3s ease;
+      }
+      
+      span {
+        display: inline-block;
+        font-family: 'Russo One', sans-serif;
+        font-weight: 400;
+        color: #fff;
+        font-size: 36px;
+        text-transform: uppercase;
+        pointer-event: none;
+        transition: transform 0.1s linear;
+      }
+      
+      .cursor {
+        pointer-events: none;
+        position: fixed;
+        padding: 0.3rem;
+        background-color: #fff;
+        border-radius: 50%;
+        mix-blend-mode: difference;
+        transition: transform 0.3s ease;
+      }
+      
+      .hover-this:hover ~ .cursor {
+        transform:translate(-50%, -50%) scale(8);
+      }
+      
+      @media(min-width: 900px) {
+        nav {
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+      
+      @media(max-width: 900px) {
+        nav {
+          top: 30%;
+        }
+        
+        .hover-this {
+          width: 100%;
+          padding: 20px 0;
+          display: inline-block;
+        }
+      }
+      </style>
 </head>
 <body>
+  <!-- header -->
     <section class="container-fluid text-white bg-gif">
-        <h1 class="text-center text-white fw-bold display-1">Grade Calculator</h1>
+        <h1 class="text-center text-white fw-bold display-1 hover-this">Grade Calculator</h1>
+        <div class="cursor"></div>
 
-
+<!-- header -->
+      <!-- subjects-container -->
         <div class="container-fluid mt-4 ">
       <div class="row justify-content-evenly">
         
@@ -20,20 +92,13 @@
       <form class="m-4">
         <div class="row">
         <div class="col-6">
-        <h2 class="">MATH</h2>
-        <h6 class="fst-italic text-secondary">Subject</h6>
+        <h2 class="hover-this">MATH</h2>
+        
+        <h6 class="fst-italic text-secondary hover-this">Subject</h6>
+        
         </div>
         <div class="col-6">
-        <h1 class="display-3 text-center text-success" id="output"></h1>
-
-        <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
-
-        <h1 class="display-3 text-center text-warning" id="output2"></h1>
-
-        <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
-        
-        <h1 class="display-3 text-center text-danger" id="output4"></h1>
-        
+        <h1 class="display-3 text-center" id="math-letter-grade"></h1>
         </div>
         </div>
         
@@ -41,19 +106,11 @@
         <hr>
         <div class="row">
             <div class="col-6">
-        <label for="score">Grades:</label><br>
-        <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+        <label for="math-grade">Grades:</label><br>
+        <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="math-grade" name="math-grade">
          </div>
          <div class="col-6">
-        <h1 class="fs-5 text-center text-success" id="output5"></h1>
-
-        <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
-
-        <h1 class="fs-5 text-center text-warning" id="output7"></h1>
-
-        <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
-        
-        <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+        <h1 class="fs-5 text-center" id="math-final-grade"></h1>
     </div>
     </div>
       </form>
@@ -68,16 +125,8 @@
           <h6 class="fst-italic text-secondary">Subject</h6>
           </div>
           <div class="col-6">
-          <h1 class="display-3 text-center text-success" id="output"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
-  
-          <h1 class="display-3 text-center text-warning" id="output2"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
-          
-          <h1 class="display-3 text-center text-danger" id="output4"></h1>
-          
+          <h1 class="display-3 text-center" id="english-letter-grade"></h1>
+        
           </div>
           </div>
           
@@ -85,19 +134,12 @@
           <hr>
           <div class="row">
               <div class="col-6">
-          <label for="score">Grades:</label><br>
-          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+          <label for="english-grade">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="english-grade" name="english-grade">
            </div>
            <div class="col-6">
-          <h1 class="fs-5 text-center text-success" id="output5"></h1>
+          <h1 class="fs-5 text-center" id="english-final-grade"></h1>
   
-          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
-  
-          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
-          
-          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
       </div>
       </div>
         </form>
@@ -113,15 +155,7 @@
           <h6 class="fst-italic text-secondary">Subject</h6>
           </div>
           <div class="col-6">
-          <h1 class="display-3 text-center text-success" id="output"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
-  
-          <h1 class="display-3 text-center text-warning" id="output2"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
-          
-          <h1 class="display-3 text-center text-danger" id="output4"></h1>
+          <h1 class="display-3 text-center" id="science-letter-grade"></h1>
           
           </div>
           </div>
@@ -130,19 +164,11 @@
           <hr>
           <div class="row">
               <div class="col-6">
-          <label for="score">Grades:</label><br>
-          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+          <label for="science-grade">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="science-grade" name="science-grade">
            </div>
            <div class="col-6">
-          <h1 class="fs-5 text-center text-success" id="output5"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
-  
-          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
-          
-          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+          <h1 class="fs-5 text-center" id="science-final-grade"></h1>
       </div>
       </div>
         </form>
@@ -161,15 +187,7 @@
         <h6 class="fst-italic text-secondary">Subject</h6>
         </div>
         <div class="col-6">
-        <h1 class="display-3 text-center text-success" id="output"></h1>
-
-        <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
-
-        <h1 class="display-3 text-center text-warning" id="output2"></h1>
-
-        <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
-        
-        <h1 class="display-3 text-center text-danger" id="output4"></h1>
+        <h1 class="display-3 text-center" id="history-letter-grade"></h1>
         
         </div>
         </div>
@@ -178,19 +196,11 @@
         <hr>
         <div class="row">
             <div class="col-6">
-        <label for="score">Grades:</label><br>
-        <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+        <label for="history-grade">Grades:</label><br>
+        <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="history-grade" name="history-grade">
          </div>
          <div class="col-6">
-        <h1 class="fs-5 text-center text-success" id="output5"></h1>
-
-        <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
-
-        <h1 class="fs-5 text-center text-warning" id="output7"></h1>
-
-        <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
-        
-        <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+        <h1 class="fs-5 text-center" id="history-final-grade"></h1>
     </div>
     </div>
       </form>
@@ -205,15 +215,7 @@
           <h6 class="fst-italic text-secondary">Subject</h6>
           </div>
           <div class="col-6">
-          <h1 class="display-3 text-center text-success" id="output"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
-  
-          <h1 class="display-3 text-center text-warning" id="output2"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
-          
-          <h1 class="display-3 text-center text-danger" id="output4"></h1>
+          <h1 class="display-3 text-center" id="filipino-letter-grade"></h1>
           
           </div>
           </div>
@@ -222,19 +224,11 @@
           <hr>
           <div class="row">
               <div class="col-6">
-          <label for="score">Grades:</label><br>
-          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+          <label for="filipino-grade">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="filipino-grade" name="filipino-grade">
            </div>
            <div class="col-6">
-          <h1 class="fs-5 text-center text-success" id="output5"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
-  
-          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
-          
-          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+          <h1 class="fs-5 text-center" id="filipino-final-grade"></h1>
       </div>
       </div>
         </form>
@@ -250,16 +244,8 @@
           <h6 class="fst-italic text-secondary">Subject</h6>
           </div>
           <div class="col-6">
-          <h1 class="display-3 text-center text-success" id="output"></h1>
+          <h1 class="display-3 text-center" id="values-letter-grade"></h1>
   
-          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
-  
-          <h1 class="display-3 text-center text-warning" id="output2"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
-          
-          <h1 class="display-3 text-center text-danger" id="output4"></h1>
-          
           </div>
           </div>
           
@@ -267,19 +253,11 @@
           <hr>
           <div class="row">
               <div class="col-6">
-          <label for="score">Grades:</label><br>
-          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+          <label for="values-grade">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="values-grade" name="values-grade">
            </div>
            <div class="col-6">
-          <h1 class="fs-5 text-center text-success" id="output5"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
-  
-          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
-          
-          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+          <h1 class="fs-5 text-center" id="values-final-grade"></h1>
       </div>
       </div>
         </form>
@@ -296,16 +274,7 @@
           <h6 class="fst-italic text-secondary">Subject</h6>
           </div>
           <div class="col-6">
-          <h1 class="display-3 text-center text-success" id="output"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
-  
-          <h1 class="display-3 text-center text-warning" id="output2"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
-          
-          <h1 class="display-3 text-center text-danger" id="output4"></h1>
-          
+          <h1 class="display-3 text-center" id="computer-letter-grade"></h1>
           </div>
           </div>
           
@@ -313,19 +282,11 @@
           <hr>
           <div class="row">
               <div class="col-6">
-          <label for="score">Grades:</label><br>
-          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+          <label for="computer-grade">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="computer-grade" name="computer-grade">
            </div>
            <div class="col-6">
-          <h1 class="fs-5 text-center text-success" id="output5"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
-  
-          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
-          
-          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+          <h1 class="fs-5 text-center" id="computer-final-grade"></h1>
       </div>
       </div>
         </form>
@@ -340,16 +301,7 @@
           <h6 class="fst-italic text-secondary">Subject</h6>
           </div>
           <div class="col-6">
-          <h1 class="display-3 text-center text-success" id="output"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="display-3 text-center" id="output1"></h1>
-  
-          <h1 class="display-3 text-center text-warning" id="output2"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="display-3 text-center" id="output3"></h1>
-          
-          <h1 class="display-3 text-center text-danger" id="output4"></h1>
-          
+          <h1 class="display-3 text-center" id="mapeh-letter-grade"></h1>
           </div>
           </div>
           
@@ -357,44 +309,134 @@
           <hr>
           <div class="row">
               <div class="col-6">
-          <label for="score">Grades:</label><br>
-          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="score" name="score">
+          <label for="mapeh-grade">Grades:</label><br>
+          <input class="mt-2 form-control text-white bg-transparent" type="number" placeholder="Enter your Grades" id="mapeh-grade" name="mapeh-grade">
            </div>
            <div class="col-6">
-          <h1 class="fs-5 text-center text-success" id="output5"></h1>
-  
-          <h1 style="color: rgb(192, 205, 50);" class="fs-5 text-center" id="output6"></h1>
-  
-          <h1 class="fs-5 text-center text-warning" id="output7"></h1>
-  
-          <h1 style="color: rgb(255, 128, 0);" class="fs-5 text-center" id="output8"></h1>
-          
-          <h1 class="fs-5 text-center text-danger" id="output9"></h1>
+          <h1 class="fs-5 text-center" id="mapeh-final-grade"></h1>
       </div>
       </div>
         </form>
         
       </div>
     </div>
-    
 
-    
     </div>
-
-
 
 
 
 <div class="container">
 <div class="row">
-    <button id="calculateGrade" class="btn btn-outline-light p-4 fs-2 fw-bold" type="button" onclick="calculateGrade()">CALCULATE GRADE</button>
+    <button class="btn btn-outline-light p-4 fs-2 fw-bold" type="button" onclick="generateGrades()">CALCULATE GRADE</button>
+    
 </div>
+<!-- subjects-container -->
 </div>
     </section>
 
 
 
-    <script src="exe.js"></script>
+
+<script>
+ 
+  function generateGrades() {
+
+    
+  const subjects = ["Math", "English", "Science", "History", "Filipino", "Values", "Computer", "Mapeh"];
+  const grades = [];
+
+  for (let i = 0; i < subjects.length; i++) {
+    const subject = subjects[i];
+    const gradeInput = document.getElementById(`${subject.toLowerCase()}-grade`);
+    const grade = gradeInput.value;
+    let letterGrade;
+    let finalGrade;
+    let gradeColor;
+
+    if (grade >= 90) {
+      letterGrade = "A↑";
+      finalGrade = `Congratulation you Passed! Your average is ${gradeInput.value }↑`;
+      gradeColor ="green";
+     
+    } else if (grade >= 80) {
+      letterGrade = "B↑";
+      finalGrade = `Congratulation you Passed! Your average is ${gradeInput.value }↑`;
+      gradeColor ="yellowgreen";
+      
+    } else if (grade >= 70) {
+      letterGrade = "C↓";
+      finalGrade = `Try Again! Your average is ${gradeInput.value }↓`;
+      gradeColor ="orange";
+  
+    } else if (grade >= 60) {
+      letterGrade = "D↓";
+      finalGrade = `Try Again! Your average is ${gradeInput.value }↓`;
+      gradeColor ="red";
+   
+    } else {
+      letterGrade = "F↓";
+      finalGrade = `Try Again! Your average is ${gradeInput.value }↓`;
+      gradeColor ="red";
+    }
+
+
+    document.getElementById(`${subject.toLowerCase()}-letter-grade`).innerHTML = letterGrade;
+    document.getElementById(`${subject.toLowerCase()}-final-grade`).innerHTML = finalGrade;
+    document.getElementById(`${subject.toLowerCase()}-letter-grade`).style.color = gradeColor;
+    document.getElementById(`${subject.toLowerCase()}-final-grade`).style.color = gradeColor;
+  }
+
+}
+
+// hover
+(function () {
+
+const link = document.querySelectorAll('nav > .hover-this');
+const cursor = document.querySelector('.cursor');
+
+const animateit = function (e) {
+	  const span = this.querySelector('span');
+	  const { offsetX: x, offsetY: y } = e,
+	  { offsetWidth: width, offsetHeight: height } = this,
+
+	  move = 25,
+	  xMove = x / width * (move * 2) - move,
+	  yMove = y / height * (move * 2) - move;
+
+	  span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+	  if (e.type === 'mouseleave') span.style.transform = '';
+};
+
+const editCursor = e => {
+	  const { clientX: x, clientY: y } = e;
+	  cursor.style.left = x + 'px';
+	  cursor.style.top = y + 'px';
+};
+
+link.forEach(b => b.addEventListener('mousemove', animateit));
+link.forEach(b => b.addEventListener('mouseleave', animateit));
+window.addEventListener('mousemove', editCursor);
+
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+    <!-- <script src="exe.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
