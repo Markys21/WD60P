@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    "Instruction: Create js and html file for the following requirements.
+    1. Requirement 1:
+    Test Input: 1, 4, 6 , 11, 45, 16, 56, 307, -4, 23
+    A.        Accept 10 numbers into Array and Display Sum 
+    Output:
+    A. The Sum of element: 465
+    B. Accept 10 numbers into Array and Display Decreasing order
+    Output:
+    B. Sort By Desc: 307,56,45,23,16,11,6,4,1,-4
+    C. Accept 10 numbers find the Greatest Number
+    Output:
+    C. Greatest number is: 307
+    D. Accept 10 numbers into Array and Display Average
+    Output:
+    D. The Average of element: 46.5
+    E. Accept 10 numbers into Array and Display Even Or Odd
+    Output:
+    E. Check Odd or Even
+    307 odd
+    56 even
+    45 odd
+    23 odd
+    16 even
+    11 odd
+    6 even
+    4 even
+    1 odd
+    -4 even
+    F. Accept 10 numbers into Array and Find Missing number 0-9
+    Output:
+    F. missing numbers 0,2,3,5,7,8,9
+    
+    "					 -->
+
+
+
+    <script>
+        let numbers = [1, 4, 6, 11, 45, 16, 56, 307, -4, 23];
+
+// A. Accept 10 numbers into Array and Display Sum
+let sum = numbers.reduce((a, b) => a + b, 0);
+document.write("<h2>A. The Sum of elements: " + sum + "</h2>");
+
+
+let numbers2 = [1, 4, 6, 11, 45, 16, 56, 307, -4, 23];
+
+// B. Accept 10 numbers into Array and Display in Decreasing order
+numbers2.sort((a, b) => b - a);
+let sortedNumbers = numbers2.join(", ");
+document.write("<h2>B. Sort By Desc: " + sortedNumbers + "</h2>");
+
+let numbers3 = [1, 4, 6, 11, 45, 16, 56, 307, -4, 23];
+
+// C. Accept 10 numbers and find the Greatest Number
+let greatestNumber = Math.max(...numbers3);
+document.write("<h2>C. Greatest number is: " + greatestNumber + "</h2>");
+
+let numbers4 = [1, 4, 6, 11, 45, 16, 56, 307, -4, 23];
+
+// D. Accept 10 numbers into Array and Display Average
+let sum1 = numbers4.reduce((a, b) => a + b, 0);
+let average = sum / numbers4.length;
+document.write("<h2>D. The Average of elements: " + average + "</h2>");
+
+let numbers5 = [1, 4, 6, 11, 45, 16, 56, 307, -4, 23];
+
+// E. Accept 10 numbers into Array and Display Even or Odd
+document.write("<h2>E. Check Odd or Even</h2>");
+numbers5.forEach(function(number) {
+  if (number % 2 === 0) {
+    document.write(number + " is even<br>");
+  } else {
+    document.write(number + " is odd<br>");
+  }
+});
+
+let numbers6 = [1, 4, 6, 11, 45, 16, 56, 307, -4, 23];
+
+// F. Accept 10 numbers into Array and Find Missing numbers from 0 to 9
+let missingNumbers = [];
+for (let i = 0; i < 10; i++) {
+  if (!numbers6.includes(i)) {
+    missingNumbers.push(i);
+  }
+}
+document.write("<h2>F. Missing numbers: " + missingNumbers.join(", ") + "</h2>");
+    </script>
+</body>
+</html>

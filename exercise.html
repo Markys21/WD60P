@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <table id="myTable" class="table">
+      <thead>
+        <tr>
+          <th>Book Title</th>
+          <th>Quantity</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Existing rows will be dynamically added here -->
+      </tbody>
+    </table>
+    <button id="addRowBtn" class="btn btn-primary">Add Row</button>
+  </div>
+  
+
+      <div class="container mt-5">
+        <h1>Gutom ka?</h1>
+        <select id="myDropdown" class="form-select">
+          <option>Pili ka</option>
+          <option>Piniritong Mantika</option>
+          <option>Pinalambot sa sama ng loob</option>
+          <option>Pinaksiwang walang ligo</option>
+          <option>Pinatagal na ulam</option>
+          <option>Wala sa nabanggit</option>
+        </select>
+        <button id="countBtn" class="btn btn-primary">Count Items</button>
+      </div>
+      
+      <div class="container mt-5" id="addElements">
+        <input type="text" name="newId" id="newId" placeholder="Enter ID name">
+        <input type="text" name="newElement" id="newElement" placeholder="Enter Element name">
+        <input type="text" name="newText" id="newText" placeholder="Enter Text Content">
+        <button class="btn btn-primary" onclick="addElement()">Add Element</button>
+      </div>
+      
+      <script>
+        function addElement(){
+          const newId = document.getElementById("newId").value;
+          const newElement = document.getElementById("newElement").value
+          
+          const newText = document.getElementById("newText").value;
+          const divElement = document.getElementById("addElements");
+
+          const createE = document.createElement("newElement");
+          createE.id = newId;
+          createE.textContent = newText;
+
+          document.body.appendChild(createE);
+        }
+
+
+
+
+
+        // function elementaAdd(){
+        //   const idNew = document.getElementById("idNew").value;
+        //   const elementNew = document.getElementById("elementNew").value;
+        //   const textNew = document.getElementById("textNew").value;
+        //   const section = document.getElementById("elementAdds");
+        //   const adding = document.createElement(elementNew);
+        //   adding.id = idNew;
+        //   adding.textNew = textNew;
+        //   document.body.appendChild(adding);
+        // }
+
+
+
+
+var books = [
+  "Cardo",
+  "Darna",
+  "Panday",
+  "Pedro Penduko",
+  "Super inggo"
+];
+
+function getRandomBook() {
+  var randomIndex = Math.floor(Math.random() * books.length);
+  return books[randomIndex];
+}
+
+function getRandomQuantity() {
+  return Math.floor(Math.random() * 10) + 1; // Random number between 1 and 10
+}
+
+function addRow() {
+  var table = document.getElementById("myTable");
+  var newRow = table.insertRow(table.rows.length);
+  var cell1 = newRow.insertCell(0);
+  var cell2 = newRow.insertCell(1);
+  var cell3 = newRow.insertCell(2);
+  
+  var bookTitle = getRandomBook();
+  var quantity = getRandomQuantity();
+  
+  cell1.innerHTML = bookTitle;
+  cell2.innerHTML = quantity;
+  cell3.innerHTML = '<button class="btn btn-danger" onclick="deleteRow(this)">Delete</button>';
+}
+
+function deleteRow(button) {
+  var row = button.parentNode.parentNode;
+  row.parentNode.removeChild(row);
+}
+
+document.getElementById("addRowBtn").addEventListener("click", addRow);
+
+
+
+
+function createElementWithText(elementType, text) {
+  var newElement = document.createElement(elementType);
+  newElement.textContent = text;
+  return newElement;
+}
+
+document.getElementById("myButton").addEventListener("click", function() {
+  var inputElement = document.getElementById("myInput");
+  var inputValue = inputElement.value;
+  
+  var selectElement = document.getElementById("mySelect");
+  var selectedOption = selectElement.value;
+  
+  var outputContainer = document.getElementById("outputContainer");
+  var newElement = createElementWithText(selectedOption, inputValue);
+  outputContainer.appendChild(newElement);
+});
+
+function createElementWithText(elementType, text) {
+  var newElement = document.createElement(elementType);
+  newElement.textContent = text;
+  return newElement;
+}
+
+
+
+      </script>
+       <script
+       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+       crossorigin="anonymous"
+     ></script>
+</body>
+</html>
