@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bg-gif {
+    background: url(/bluekai-tc-hero.gif) no-repeat;
+    background-size: cover;
+
+    
+}
+.modal-content {
+    background: url(/giphy\ \(2\).gif) no-repeat;
+    background-size: cover;
+
+}

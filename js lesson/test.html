@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD Example</title>
+</head>
+<body>
+  <h1>CRUD Example</h1>
+
+  <form id="crud-form">
+    <input type="text" id="name-input" placeholder="Name" required>
+    <input type="text" id="age-input" placeholder="Age" required>
+    <button type="submit">Add</button>
+  </form>
+
+  <ul id="data-list"></ul>
+
+  <script>
+    const form = document.getElementById('crud-form');
+    const nameInput = document.getElementById('name-input');
+    const ageInput = document.getElementById('age-input');
+    const dataList = document.getElementById('data-list');
+
+    let data = [];
+
+    form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+  const name = nameInput.value;
+  const age = ageInput.value;
+
+  if (name && age) {
+    const newData = { name, age };
+    data.push(newData);
+    displayData();
+    form.reset();
+  }
+});
+
+function displayData() {
+  dataList.innerHTML = '';
+
+  data.forEach((item, index) => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+      <span>${item.name}, ${item.age}</span>
+      <button onclick="editData(${index})">Edit</button>
+      <button onclick="deleteData(${index})">Delete</button>
+    `;
+    dataList.appendChild(listItem);
+  });
+}
+
+function editData(index) {
+  const item = data[index];
+  nameInput.value = item.name;
+  ageInput.value = item.age;
+  data.splice(index, 1);
+  displayData();
+}
+
+function deleteData(index) {
+  data.splice(index, 1);
+  displayData();
+}
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div>
+        <button id="start">Let's get Started!</button>
+    </div>
+   <br><br> -->
+
+    <!-- <div>
+        <label for="studentName">Full Name:</label>
+        <input type="text" id="studentName" name="StudentName">
+        <button onclick="displayStudentName()">Submit</button>
+        <br><br>
+
+        <h2 id="outStudentName" style="text-decoration: underline;"></h2>
+    </div> -->
+
+
+
+    <div>
+        <label for="English">English:</label>
+        <input type="number" id="subEng">
+        <p id="engNum"></p>
+        <br>
+        <!-- <button onclick="getAverage()">Click me</button> -->
+        <label for="Algebra">College Algebra:</label>
+        <input type="number" id="subAlg">
+        <p id="algNum"></p>
+        <br>
+        <label for="Gen.Psy.">General Psychology:</label>
+        <input type="number" id="subPsy">
+        <p id="psyNum"></p>
+        <br>
+        <label for="Accounting">Accounting:</label>
+        <input type="number" id="subAcc">
+        <p id="accNum"></p>
+        <br>
+        <label for="Marketing">Marketing Principles:</label>
+        <input type="number" id="subMark">
+        <p id="marNum"></p>
+        <br>
+        <label for="Rizal">Rizal:</label>
+        <input type="number" id="subRiz">
+        <p id="rizNum"></p>
+        <br>
+        <label for="Calculus">Calculus:</label>
+        <input type="number" id="subCal">
+        <p id="calNum"></p>
+        <br>
+        <label for="CompFund">Computer Fundamentals:</label>
+        <input type="number" id="subComp">
+        <p id="comNum"></p>
+        <br>
+        <button onclick="getAverage()">Calculate</button>
+        <p id="calculateGrade"></p><br>
+
+    </div>
+
+    <!-- <div style="display: flex">
+        <label for="mathSub">Enter MAth </label>
+        <input type="text" id="mathSub">
+        <p id="outputMath"></p>
+        
+        <button onclick="getAverage()">Submit</button>
+    </div> -->
+    
+
+
+    <script>
+        // // ***ALERT (CALCULATE YOUR GRADES)
+// function checkGrades(){
+//     alert('Calculate your Grades!');
+// }
+// document.getElementById('start').onclick = checkGrades;
+// // **----------------------------------------
+
+
+
+// ***DISPLAY STUDENT NAME
+// function displayStudentName() {
+//   let fullName = document.getElementById('studentName').value;
+//   // console.log(fullName);
+//   document.getElementById('outStudentName').innerHTML = fullName;
+// }
+// // **----------------------------------------
+
+
+
+// ***TO GET AVERAGE & REMARKS FOR GRADES
+function getAverage(){
+let gradeArray = [];
+let engNum  = parseInt(document.getElementById("subEng").value);
+// gradeArray.push(engNum);
+// document.getElementById("engNum").innerHTML = gradeArray;
+let algNum = parseInt(document.getElementById("subAlg").value);
+let psyNum = parseInt(document.getElementById("subPsy").value);
+let accNum = parseInt(document.getElementById("subAcc").value);
+let marNum = parseInt(document.getElementById("subMar").value);
+let rizNum = parseInt(document.getElementById("subRiz").value);
+let calNum = parseInt(document.getElementById("subCal").value);
+let comNum = parseInt(document.getElementById("subCom").value);
+
+gradeArray.push(engNum, algNum, psyNum, accNum, marNum, rizNum, calNum, comNum);
+// console.log("Your grades are:" + gradeArray);
+document.getElementById("calculateGrade").innerHTML = gradeArray;
+}
+console.log('connection please');
+    </script>
+</body>
+</html>

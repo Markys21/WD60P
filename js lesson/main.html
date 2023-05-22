@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="demo"></p>
+   <button onclick="myFunction()">Click Me</button><br>
+   <button onclick="myAlertFunction()" style="margin-top: 20px;">Alert Me</button><br>
+
+    <br><br>
+    <label for="demo">cellphone</label>
+    <input type="text" name="demo" id="demo">
+    
+    <p id="number"></p>
+    <button onclick="displayNumber">Show number</button>
+
+    <script>
+        let cellNumber = parseInt(document.getElementById("demo").value);
+
+        function displayNumber(){
+            document.getElementById("number").innerHTML = cellNumber;
+        }
+        
+        
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Generate Grades</title>
+	<script>
+		function generateGrades() {
+			const englishGrade = document.getElementById("english-grade").value;
+			let englishLetterGrade;
+
+			if (englishGrade >= 90) {
+				englishLetterGrade = "A";
+			} else if (englishGrade >= 80) {
+				englishLetterGrade = "B";
+			} else if (englishGrade >= 70) {
+				englishLetterGrade = "C";
+			} else if (englishGrade >= 60) {
+				englishLetterGrade = "D";
+			} else {
+				englishLetterGrade = "F";
+			}
+
+			const scienceGrade = document.getElementById("science-grade").value;
+			let scienceLetterGrade;
+
+			if (scienceGrade >= 90) {
+				scienceLetterGrade = "A";
+			} else if (scienceGrade >= 80) {
+				scienceLetterGrade = "B";
+			} else if (scienceGrade >= 70) {
+				scienceLetterGrade = "C";
+			} else if (scienceGrade >= 60) {
+				scienceLetterGrade = "D";
+			} else {
+				scienceLetterGrade = "F";
+			}
+
+			document.getElementById("english-letter-grade").innerHTML = englishLetterGrade;
+			document.getElementById("science-letter-grade").innerHTML = scienceLetterGrade;
+		}
+	</script>
+</head>
+<body>
+	<h1>Generate Grades</h1>
+	<label for="english-grade">Enter your English grade:</label>
+	<input type="number" id="english-grade" name="english-grade" required><br><br>
+	<label for="science-grade">Enter your Science grade:</label>
+	<input type="number" id="science-grade" name="science-grade" required><br><br>
+	<button onclick="generateGrades()">Generate Grades</button>
+	<p>Your English grade is: <span id="english-letter-grade"></span></p>
+	<p>Your Science grade is: <span id="science-letter-grade"></span></p>
+</body>
+</html> -->
+

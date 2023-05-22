@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate Grades</title>
+	<script>
+		function generateGrades() {
+			const subjects = ["Math", "English", "Science", "History", "Filipino", "Values", "Computer", "Mapeh"];
+			const grades = [];
+
+			for (let i = 0; i < subjects.length; i++) {
+				const subject = subjects[i];
+				const gradeInput = document.getElementById(`${subject.toLowerCase()}-grade`);
+				const grade = gradeInput.value;
+				let letterGrade;
+                let finalGrade;
+
+				if (grade >= 90) {
+					letterGrade = "A";
+                    finalGrade = "eyy";
+				} else if (grade >= 80) {
+					letterGrade = "B";
+                    finalGrade = "uwu";
+				} else if (grade >= 70) {
+					letterGrade = "C";
+                    finalGrade = "aral pa";
+				} else if (grade >= 60) {
+					letterGrade = "D";
+                    finalGrade = "lah";
+				} else {
+					letterGrade = "F";
+                    finalGrade = "bobo";
+				}
+
+				grades.push({
+					subject: subject,
+					grade: grade,
+					letterGrade: letterGrade,
+                    finalGrade:finalGrade
+				});
+
+				document.getElementById(`${subject.toLowerCase()}-letter-grade`).innerHTML = letterGrade;
+
+				document.getElementById(`${subject.toLowerCase()}-final-grade`).innerHTML = finalGrade;
+
+			}
+
+			// Output the grades to console for testing purposes
+			console.log(grades);
+		}
+	</script>
+</head>
+<body>
+	<h1>Generate Grades</h1>
+	<label for="math-grade">Enter your Math grade:</label>
+	<input type="number" id="math-grade" name="math-grade" required><br><br>
+
+	<label for="english-grade">Enter your English grade:</label>
+	<input type="number" id="english-grade" name="english-grade" required><br><br>
+
+    <label for="science-grade">Enter your Science grade:</label>
+	<input type="number" id="science-grade" name="science-grade" required><br><br>
+
+    <label for="history-grade">Enter your History grade:</label>
+	<input type="number" id="history-grade" name="history-grade" required><br><br>
+
+    <label for="filipino-grade">Enter your Filipino grade:</label>
+	<input type="number" id="filipino-grade" name="filipino-grade" required><br><br>
+
+    <label for="values-grade">Enter your Values grade:</label>
+	<input type="number" id="values-grade" name="values-grade" required><br><br>
+
+    <label for="computer-grade">Enter your Computer grade:</label>
+	<input type="number" id="computer-grade" name="computer-grade" required><br><br>
+
+    <label for="mapeh-grade">Enter your Mapeh grade:</label>
+	<input type="number" id="mapeh-grade" name="mapeh-grade" required><br><br>
+
+    
+
+
+
+	<button onclick="generateGrades()">Generate Grades</button>
+
+	<p>Your Math grade is: <span id="math-letter-grade"></span></p>
+
+	<p>Your English grade is: <span id="english-letter-grade"></span></p>
+	
+    <p>Your Science grade is: <span id="science-letter-grade"></span></p>
+
+	<p>Your History grade is: <span id="history-letter-grade"></span></p>
+
+	<p>Your Filipino grade is: <span id="filipino-letter-grade"></span></p>
+
+	<p>Your Values grade is: <span id="values-letter-grade"></span></p>
+
+	<p>Your Computer grade is: <span id="computer-letter-grade"></span></p>
+
+	<p>Your Mapeh grade is: <span id="mapeh-letter-grade"></span></p>
+
+    <p id="math-final-grade"></p>
+    <p id="english-final-grade"></p>
+    <p id="science-final-grade"></p>
+    <p id="history-final-grade"></p>
+    <p id="filipino-final-grade"></p>
+    <p id="values-final-grade"></p>
+    <p id="computer-final-grade"></p>
+    <p id="mapeh-final-grade"></p>
+</body>
+</html>

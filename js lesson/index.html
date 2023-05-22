@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>[WD60]JavaScript Hands On 3 - Marko Santos</h1>
+
+<h3>Grade Calculator</h3>
+<body>
+<hr/>
+<button onclick="mainfunc()">Campute your Grade</button>
+<br>
+<br/>
+
+    <label>Full Name:</label> <input type="text" name="inputName" id="inputName" placeholder="Enter your name"/>
+    <br/>
+    <p id="outputName"></p>
+    <p id="outpoutAve"></p>
+    <!-- <p id="greater"></p> -->
+    <h3>Input Your Grade Per Subject</h3>
+    
+    
+    <label>Math: &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp</label><input type="number" name="Math" id="MAth" placeholder="Enter your grade in Math"/> <label>&nbsp&nbsp</label><label id="mathGrade">&nbsp&nbsp</label>
+    <br/>
+    <br/>
+    <label>English:  &nbsp&nbsp &nbsp</label><input type="number" name="Eng" id="Eng" placeholder="Enter your grade in English"/><label>&nbsp&nbsp</label><label id="engGrade">  &nbsp&nbsp</label>
+    <br/>
+    <br/>
+    <label>Science:&nbsp &nbsp&nbsp </label><input type="number" name="Sci" id="Sci" placeholder="Enter your grade in Science"/><label>&nbsp&nbsp</label><label id="sciGrade">   &nbsp&nbsp</label>
+    <br/>
+    <br/>
+    <label>History: &nbsp &nbsp&nbsp</label><input type="number" name="His" id="His" placeholder="Enter your grade in History"/><label>&nbsp&nbsp</label><label id="hisGrade">   &nbsp</label>
+    <br/>
+    <br/>
+    <label>Filipino: &nbsp&nbsp </label><input type="number" name="Fil" id="Fil" placeholder="Enter your grade in Filipino"/><label>&nbsp&nbsp</label><label id="filGrade">&nbsp</label>
+    <br/>
+    <br/>
+    <label>Values: &nbsp&nbsp &nbsp&nbsp</label><input type="number" name="Val" id="Val" placeholder="Enter your grade in Values"/><label>&nbsp&nbsp</label><label id="valGrade">&nbsp</label>
+    <br/>
+    <br/>
+    <label>Computer: </label><input type="number" name="Com" id="Com" placeholder="Enter your grade in Computer"/><label>&nbsp&nbsp</label><label id="comGrade">&nbsp</label>
+    <br/>
+    <br/>
+    <label>Mapeh:  &nbsp&nbsp&nbsp&nbsp</label><input type="number" name="Mapeh" id="Mapeh" placeholder="Enter your grade in Mapeh"/><label>&nbsp&nbsp</label><label id="mapGrade">&nbsp</label>
+    <br/>
+    <br/>
+    <br/>
+    
+</body>
+<script>
+	console.log('test connection changes');
+
+var arrStore = [];
+
+var arrSubject = ["MAth", "Eng", "Sci", "His", "Fil", "Val", "Com","Mapeh"];
+
+
+// names
+function displayStudentName(){
+    let outputName = document.getElementById("inputName").value;
+
+    document.getElementById("outputName").innerHTML = "welcome to ISCP! " + outputName;
+}
+
+// subjects remarks repetition
+
+ function getAverage(){
+    var mathGrade = parseInt(document.getElementById("MAth").value);
+    var engGrade  = parseInt(document.getElementById("Eng").value);
+    var sciGrade  = parseInt(document.getElementById("Sci").value);
+    var hisGrade  = parseInt(document.getElementById("His").value);
+    var filGrade  = parseInt(document.getElementById("Fil").value);
+    var valGrade  = parseInt(document.getElementById("Val").value);
+    var comGrade  = parseInt(document.getElementById("Com").value);
+    var mapGrade  = parseInt(document.getElementById("Mapeh").value);
+
+    arrStore.push(mathGrade, engGrade, sciGrade,hisGrade, filGrade,valGrade, comGrade,mapGrade);
+
+    let averageGrade = ( mathGrade + engGrade + sciGrade + hisGrade + filGrade + valGrade + comGrade + mapGrade ) / 8;
+    console.log("your average grade is: " + averageGrade);
+   
+    if (averageGrade <= 68 && averageGrade >50){
+        console.log("Retake/Failed");
+      }
+      else if (averageGrade >= 69 && averageGrade <= 74){
+        console.log("Remedial");
+      }
+      else if (averageGrade >= 75 && averageGrade <= 100){
+        console.log("Passed");
+      }
+      else if (averageGrade <= 50){
+        console.log("Invalid");
+      }
+      else if (averageGrade > 100){
+        console.log("Invalid");
+      }
+    // console.log(arrStore);
+    getFailedGrade();
+    getPassedGrade();
+}
+
+// failed grade
+
+// function getFailedGrade(){
+//     let failedGrades = [];
+//     // console.log(arrSubject);
+//     for(let i = 0; i < arrStore.length; i++){
+//             if(arrStore[i] < 75){
+//                 failedGrades.push(arrStore[i]);
+//                 console.log( i, arrSubject[i], arrStore[i]);
+//                 // console.log(arrSubject[i+1]);
+//                 // console.log("Failed Grades", failedGrades+ arrSubject[i-1]);
+//             }else {
+//                 // console.log("Passed Grades", arrStore[i]);
+//             }
+//         }
+//         console.log("Failed Grades", failedGrades);
+// }
+
+// function getPassedGrade(){
+//     let passedGrade = [];
+//     // console.log(arrSubject);
+//     for(let i = 0; i < arrStore.length; i++){
+//             if(arrStore[i] > 75){
+//                 passedGrade.push(arrStore[i]);
+//                 console.log( i, arrSubject[i], arrStore[i]);
+//                 // console.log(arrSubject[i+1]);
+//                 // console.log("Failed Grades", failedGrades+ arrSubject[i-1]);
+//             }else {
+//                 // console.log("Passed Grades", arrStore[i]);
+//             }
+//         }
+//         console.log("Passed Grades", passedGrade);
+// }
+
+function mainfunc(){
+    displayStudentName()
+    // getFailedGrade()
+    getAverage()
+    // getPassedGrade()
+}
+</script>
+
+</html>

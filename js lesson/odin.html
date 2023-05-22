@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- <button>Press me</button>
+<p>The length of the string is:</p>
+<p id="demo"></p> -->
+
+<label for="weather">Select the weather type today: </label>
+<select id="weather">
+  <option value="">--Make a choice--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowing">Snowing</option>
+  <option value="overcast">Overcast</option>
+</select>
+
+<p></p>
+<!-- <p id="demo"></p> -->
+
+    <script>
+        // console.log(23 + 97);
+        // console.log(23 + 97 + 29 / 77);
+        // let a = 10;
+        // let b = 7 * a
+        // console.log(b)
+        // console.log(a);
+        // console.log(9 * a);
+//         --------------------------------------------------------------------------------------
+// variable lesson
+       
+//         function sayHi() {
+//   if (true) {
+//     var phrase = "Hello";
+//   }
+
+//   alert(phrase); // works
+// }
+
+// sayHi();
+// function sayHi() {
+//   var phrase; // declaration works at the start...
+
+//   alert(phrase); // undefined
+
+//   phrase = "Hello"; // ...assignment - when the execution reaches it.
+// }
+
+// sayHi();
+// --------------------------------------------------------------------------------------
+// string lesson
+// const badString = "string";
+// console.log(badString);
+
+// const bigmouth = 'I\'ve got no right to take my place…';
+// console.log(bigmouth);
+
+// const name = "Chris";
+// const greeting = `Hello, ${name}`;
+// console.log(greeting);
+
+// const one = "Hello, ";
+// const two = "how are you?";
+// const joined = `${one}${two}`;
+// console.log(joined);
+
+// const button = document.querySelector("button");
+
+// function greeting() {
+//   const total = prompt("What is answer of 1+1?");
+//   alert(`the answer is ${total}`);
+// }
+// button.addEventListener("click",greeting)
+
+// const button = document.querySelector("button");
+
+// function greet() {
+//   const name = prompt("What is your name?");
+//   alert(`Hello ${name}, nice to see you!`);
+// }
+
+// button.addEventListener("click", greet);
+
+// --------------------------------------------------------------------------------------
+// Concatenation using "+"
+
+// const greeting = "Hello";
+// const name = "Markys";
+// console.log(greeting + ", " + name);
+// console.log(`${greeting}, ${name}`);
+
+// --------------------------------------------------------------------------------------
+// string and number
+// const name = "front";
+// const number = 777;
+// console.log(`${name} ${number}`);
+
+// const myString = "123";
+// const myNum = Number(myString);
+// console.log(typeof myNum);
+
+// const myNum2 = 123;
+// const myString2 = myNum2.toString();
+// console.log(typeof myString2);
+
+// const song = "Fight the Youth";
+// const score = 9;
+// const highScore = 10;
+// const output = `I like the song ${song}. I gave it a score of ${
+//   (score / highScore) * 100
+// }%. `;
+// console.log(output);
+// let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// document.getElementById("demo").innerHTML = text.length;
+
+
+// --------------------------------------------------------------------------------------
+// Boolean
+// alert( 2 > 1 );
+// alert( 2 == 1 );
+// alert( 2 != 1 );
+// let result = 1 > 4;
+// alert( result );
+// alert( true == 1 ); // true
+// alert( false == 0 ); // true
+// alert( 0 == false ); // true
+// alert( '' == false ); // true
+// alert( 0 === false ); // false, because the types are different
+// alert( null === undefined ); // false
+// alert( null == undefined ); // true
+
+// --------------------------------------------------------------------------------------
+// Logical operators
+//OR
+// alert( true || true );   // true
+// alert( false || true );  // true
+// alert( true || false );  // true
+// alert( false || false ); // false
+
+//AND
+// alert( true && true );   // true
+// alert( false && true );  // false
+// alert( true && false );  // false
+// alert( false && false ); // false
+
+// --------------------------------------------------------------------------------------
+// string comparison
+// let demo = "Z" > "A";
+// let demo2 = "Glow" > "Glee";
+// let demo3 = "Bee" > "be";
+
+// document.getElementById("demo").innerHTML = demo;
+// document.getElementById("demo2").innerHTML = demo2;
+// document.getElementById("demo3").innerHTML = demo3;
+// alert( 'Z' > 'A' ); // true
+// alert( 'Glow' > 'Glee' ); // true
+// alert( 'Bee' > 'Be' ); // true
+
+// --------------------------------------------------------------------------------------
+// if else statement
+// const time = new Date().getHours();
+// let greeting;
+// if (time < 10) {
+//   greeting = "Good morning";
+// } else if (time < 20) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+// document.getElementById("demo").innerHTML = greeting;
+
+// const status = prompt("Kaya mopa? \(Kaya pa, medyo kaya pa\)")
+// const comment1 = 'wow';
+// const comment2 = 'galingan mopa';
+// const comment3 = 'pahinga ka muna'
+// if (status == 'kaya pa'){
+//   alert(comment1);
+// } else if (status == 'medyo kaya pa') {
+//   alert(comment2);
+// } else {
+//   alert(comment3);
+// }
+
+// const begin = prompt('Who\'s there?');
+// let other = 'I don\'t know you';
+// let greet3 = 'canceled';
+// if (begin == 'Admin'){
+//     const pass = prompt('Input your Password');
+//     let greet = 'Welcome!';
+//     let greet2 = 'Wrong Password';
+   
+
+//     if (pass == 'TheMaster'){
+//         alert(greet);
+//     }else if (pass == 'other'){
+//         alert(greet2);
+//     }else {
+//         alert(greet3);
+//     }
+// }else if (begin == 'other'){
+//     alert(other);
+// }else {
+//     alert(greet3)
+// }
+
+// let userName = prompt("Who's there?", '');
+
+// if (userName === 'Admin') {
+
+//   let pass = prompt('Password?', '');
+
+//   if (pass === 'TheMaster') {
+//     alert( 'Welcome!' );
+//   } else if (pass === '' || pass === null) {
+//     alert( 'Canceled' );
+//   } else {
+//     alert( 'Wrong password' );
+//   }
+
+// } else if (userName === '' || userName === null) {
+//   alert( 'Canceled' );
+// } else {
+//   alert( "I don't know you" );
+// }
+
+// const select = document.querySelector("select");
+// const para = document.querySelector("p");
+
+// select.addEventListener("change", setWeather);
+
+// function setWeather() {
+//   const choice = select.value;
+
+//   if (choice === "sunny") {
+//     para.textContent =
+//       "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.";
+//   } else if (choice === "rainy") {
+//     para.textContent =
+//       "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long.";
+//   } else if (choice === "snowing") {
+//     para.textContent =
+//       "The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.";
+//   } else if (choice === "overcast") {
+//     para.textContent =
+//       "It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.";
+//   } else {
+//     para.textContent = "";
+//   }
+// }
+
+// --------------------------------------------------------------------------------------
+// Switch statement
+const select = document.querySelector("select");
+const para = document.querySelector("p");
+
+select.addEventListener("change", setWeather);
+
+function setWeather() {
+  const choice = select.value;
+
+  switch (choice) {
+    case "sunny":
+      para.textContent =
+        "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.";
+      break;
+    case "rainy":
+      para.textContent =
+        "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long.";
+      break;
+    case "snowing":
+      para.textContent =
+        "The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.";
+      break;
+    case "overcast":
+      para.textContent =
+        "It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.";
+      break;
+    default:
+      para.textContent = "";
+  }
+}
+
+// --------------------------------------------------------------------------------------
+// for loop
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = "";
+// for (let i = 0; i < cars.length; i++) {
+//   text += cars[i] + "<br>";
+// }
+
+// document.getElementById("demo").innerHTML = text;
+
+// const prompt = require('Prompt-sync')();
+// let colors = [];
+
+// function addColor() {
+//   let kulay = prompt("Enter a Color");
+//   colors.push(kulay);
+//   console.log(colors);
+// }
+
+// addColor();
+
+// const result = multiply(3, 5);
+// function multiply(num1, num2) {
+//   return num1 * num2;
+// }
+// console.log(result);
+// -----------------------------
+// remove function
+// const myText = "I am a string";
+// const newString = myText.replace("string", "Number");
+// console.log(newString);
+
+// -----------------------------
+// join function
+// const myArray = ["I", "love", "chocolate","frogs"];
+// const madeAstring = myArray.join(" ");
+// console.log(madeAstring);
+// ________________________________________
+// random Function
+// const myNumber = Math.random();
+// console.log(myNumber)
+
+// function getRandomInt(max){
+//   return Math.floor(Math.random() * max);
+// }
+// console.log(getRandomInt(3));
+// // Expected output: 0, 1 or 2
+// console.log(getRandomInt(1));
+// console.log(Math.random());
+
+// function getRandom(){
+//   return Math.random();
+// }
+// console.log(getRandom(12));
+
+// function getRandomArbitrary(min, max){
+//   return Math.random() * (max - min) + min;
+// }
+// function getRandomIntInclusive(min, max) {
+//   min = Math.ceil(min);
+//   max = Math.floor(max);
+//   return Math.floor(Math.random() * (max - min + 1) + min); 
+// }
+
+</script>
+    </script>
+</body>
+</html>
